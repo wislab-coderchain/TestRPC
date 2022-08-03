@@ -1,0 +1,24 @@
+server:
+    port: 8085
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.24.173.39:8848
+        namespace: 2e360ce2-2cd6-4988-8a17-cd4003447eb9
+  application:
+    name: orderserver
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #        虚拟机利用NAT模式
+    url: jdbc:mysql://192.168.11.128:3306/reggie?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: assign_id

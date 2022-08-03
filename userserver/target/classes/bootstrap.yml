@@ -1,0 +1,14 @@
+spring:
+  #  profiles:
+  #    active: @maven.profiles.active@
+  application:
+    name: userservice
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 120.24.173.39:8848
+        namespace: 2e360ce2-2cd6-4988-8a17-cd4003447eb9
+      discovery:
+        server-addr: 120.24.173.39:8848
+        namespace: 2e360ce2-2cd6-4988-8a17-cd4003447eb9

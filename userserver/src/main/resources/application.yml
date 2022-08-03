@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #        虚拟机利用NAT模式
+    url: jdbc:mysql://192.168.11.128:3306/reggie?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+#spring:
+#  #  profiles:
+#  #    active: @maven.profiles.active@
+#  application:
+#    name: userserver
+#  cloud:
+#    nacos:
+#      config:
+#        file-extension: yaml
+#      discovery:
+#        server-addr: 120.24.173.39:8848
